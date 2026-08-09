@@ -1,3 +1,23 @@
 body {
     background-color: plum;
 }
+
+h1 {
+    color: white;
+    border: 8px solid white;
+
+}
+
+h2 {
+    color: #5c1e53;
+    border: 8px solid white;
+}
+
+p {
+    color: white;
+
+}
+
+h3 {
+    color: Pink;
+}
