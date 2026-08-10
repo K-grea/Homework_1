@@ -96,3 +96,27 @@ img {
             padding: 0.5rem;
         }
     }
+
+    /* Accessibility contrast fixes*/
+    body {
+        background-color: #5c1e53;
+        color: white;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+        color: white;
+    }
+
+    nav a {
+        color: white;
+    }
+
+    h1,
+    h2 {
+        border-color: white;
+    }
+
+}
