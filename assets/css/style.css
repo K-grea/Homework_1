@@ -19,7 +19,11 @@ p {
 }
 
 h3 {
-    color: Pink;
+    color: white;
+}
+
+li {
+    color: white;
 }
 
 /* Navigation */
