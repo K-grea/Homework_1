@@ -21,3 +21,78 @@ p {
 h3 {
     color: Pink;
 }
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 1 rem;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main-content */
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Images */
+img {
+    max-width: 100px;
+    height: auto;
+}
+
+/*Spacing*/
+h1,
+h2,
+h3,
+p,
+img {
+    margin-bottom: 1rem;
+}
+
+/*Tablet*/
+@media (max-width:768px) {
+    nav ul {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    /* Mobile*/
+    @media (max-width:320px) {
+        body {
+            overflow-x: hidden;
+        }
+
+        main {
+            width: auto;
+            padding: 1rem;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+
+        nav ul {
+            padding: 0.5rem;
+        }
+    }
