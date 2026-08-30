@@ -4,3 +4,8 @@ const factText = document.getElementById("fact-text");
 factButton.addEventListener("click", function () {
     factText.textContent = "Dogs have incredible sense of smell!";
 });
+
+breedInput.addEventListener("input", function () {
+    breedDisplay.textContent = breedInput.value;
+    breedDisplay.style.fontSize = "24px";
+});
