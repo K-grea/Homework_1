@@ -40,6 +40,8 @@ const formSuccess = document.getElementById("formSuccess");
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    formSuccess.textContent = "";
+
     let isValid = true;
 
     // Name validation
