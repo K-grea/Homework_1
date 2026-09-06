@@ -102,3 +102,21 @@ messageInput.addEventListener("input", function () {
 });
 
 
+// Random Dog Fact from API
+fetch(https://dogapi.dog/api/v2/facts?limit=1)
+    .then(response => {
+    if (response.ok) {
+        throw new Error("Could not get dog fact.");
+    }
+    return response.json();
+})
+
+        .then(data => {
+            const factResult = document.getElementById("factResult");
+            factResult.textContent = data.data[0].attributes.body;
+        })
+        .catch(error => {
+            const factResult = document.getElementById("factResult");
+            factResult.textContent = "Whoops! we couldn't fetch a dog fact :(";
+            console.error(error);
+        });
