@@ -27,10 +27,12 @@ const form = document.getElementById("contactForm");
 
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
+const phoneInput = document.getElementById("phone");
 const messageInput = document.getElementById("message");
 
 const nameError = document.getElementById("nameError");
 const emailError = document.getElementById("emailError");
+const phoneError = document.getElementById("phoneError");
 const messageError = document.getElementById("messageError");
 
 const formSuccess = document.getElementById("formSuccess");
@@ -60,7 +62,7 @@ form.addEventListener("submit", function (event) {
         emailError.textContent = "";
     }
 
-    //Phone validation
+    // Phone validation
     if (phoneInput.value.trim() === "") {
         phoneError.textContent = "Please enter your phone number.";
         isValid = false;
